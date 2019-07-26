@@ -1,0 +1,56 @@
+#content-blocks
+  display: flex
+  flex-wrap: wrap
+  .block
+    display: flex
+    flex-basis: 49%
+    flex-direction: column
+    margin: 2% 1% 0
+    padding: 35px 70px 35px 35px
+    border-radius: $borderRadius
+    background-color: #fff
+    &:nth-child(1)
+      background: url("../../img/extra-img-1.svg") no-repeat bottom right #fff
+    &:nth-child(2)
+      background: url("../../img/extra-img-2.svg") no-repeat bottom right #fff
+    &:nth-child(3)
+      background: url("../../img/extra-img-3.svg") no-repeat bottom right #fff
+    &:nth-child(4)
+      background: url("../../img/extra-img-4.svg") no-repeat bottom right #fff
+    &:nth-child(1),
+    &:nth-child(3)
+      margin-left: 0
+    &:nth-child(2),
+    &:nth-child(4)
+      margin-right: 0
+    &__title
+      margin-bottom: 10px
+      font-size: $textBig
+      line-height: 30px
+    &__description
+      font-size: $textNormal
+      line-height: 20px
+    &__links
+      display: flex
+      flex-direction: column
+      margin: 20px 0
+      .link
+        margin: 5px 0
+        color: #3186ea
+        font-size: $textNormal
+        line-height: 20px
+        text-decoration: underline
+        text-decoration-color: rgb(219, 234, 252)
+    &__button
+      width: 60px
+      height: 30px
+      margin-top: auto
+      border: none
+      border-radius: 100px
+      background-color: #ef498f
+      color: #fff
+      cursor: pointer
+@media screen and (max-width: $mediaMobile)
+  .block
+    flex-basis: 100% !important
+    margin: 2% 0 !important

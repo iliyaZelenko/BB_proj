@@ -1,0 +1,104 @@
+.header-strip
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 55px
+  padding: 0 50px
+  background-color: #fff
+  &__inner-element
+    display: flex
+    align-items: center
+  .menu-button
+    display: none
+    border: none
+    background-color: transparent
+    &__button-name
+      margin-left: 10px
+  .search-area
+    //smth
+    &__icon
+      margin-right: 8px
+    &__input
+      padding: 3px 0
+      border: none
+      font-weight: bold
+      &::placeholder
+        color: #000
+  .logo
+    display: none
+  .account
+    //smth
+    &__text
+      padding-left: 10px
+      font-size: 15px
+      line-height: 25px
+.header-introducing
+  display: flex
+  flex-direction: column
+  background: url('../img/header-bg.svg') no-repeat center
+  background-size: cover
+  color: #fff
+  .header-main-part
+    display: flex
+    position: relative
+    flex-direction: column
+    align-items: center
+    margin: 0
+    text-align: center
+    &__fav-ico
+      position: absolute
+      top: 20px
+      right: 25px
+    &__subtitle
+      margin-top: 25px
+      font-size: 12px
+      font-weight: normal
+      line-height: 20px
+      text-transform: uppercase
+    &__title
+      margin-top: 10px
+      font-size: 48px
+      font-weight: bolder
+      line-height: 50px
+      text-transform: capitalize
+    &__description
+      max-width: 60%
+      margin-top: 15px
+      font-size: 16px
+      line-height: 25px
+  .links-block
+    display: flex
+    margin: 35px auto 0
+    &__link
+      position: relative
+      padding: 15px 15px
+      font-size: $textNormal
+      background-color: #fff
+      font-weight: bold
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 1px
+        transform: translateY(-10px)
+        transition: height 0.3s, opacity 0.3s, transform 0.3s
+        border-radius: 100px
+        opacity: 0
+        background-color: $color2
+      &:first-child
+        padding-left: 30px
+      &:last-child
+        padding-right: 30px
+      &:hover::before,
+      &:focus::before
+        height: 3px
+        transform: translateY(0)
+        opacity: 1
+@media screen and (max-width: $mediaLaptop)
+    .logo,
+    .menu-button
+      display: flex !important
+    .header-strip
+      padding: 0 20px
