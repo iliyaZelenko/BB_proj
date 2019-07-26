@@ -1,0 +1,27 @@
+#navigation
+  display: flex
+  flex-direction: column
+  width: 240px
+  padding: 25px
+  background-color: #fff
+  .menu-list
+    //smth
+    .logo-wrapper
+      margin-bottom: 17px
+    .menu-links
+      display: flex
+      flex-direction: column
+      &__link
+        @include link-style($margin-top-bottom: 7px)
+        &.active
+          color: #000
+          text-decoration: none
+          font-weight: bold
+        &.hot
+          display: flex
+          align-self: flex-start
+          color: $colorPink
+          font-weight: bold
+          &::before
+            content: url("../img/help-icon.svg") // динамика
+            margin-right: 5px

@@ -4,9 +4,15 @@ html(lang='ru')
     head
         include ../blocks/head/head
     body
-        div.advertising228
-        .content_wrapper
-            include ../blocks/header/header
-            include ../blocks/section-1/section-1
-            include ../blocks/section-2/section-2
-        //script(src='scripts/main.js')
+        div.advertising228 РЕКЛАМА
+        .main-part
+            include ../blocks/navigation/nav
+            .content_wrapper
+                include ../blocks/header/header
+                include ../blocks/section-1/section-1
+                include ../blocks/section-2/section-2
+                include ../blocks/section-3/section-3
+                include ../blocks/section-4/section-4
+        script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&;sensor=false")
+        //script(async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap")
+        script(src='scripts/main.js')
