@@ -15,8 +15,8 @@
         @include link-style($margin-top-bottom: 7px)
         &.active
           color: #000
-          text-decoration: none
           font-weight: bold
+          text-decoration: none
         &.hot
           display: flex
           align-self: flex-start
@@ -25,3 +25,16 @@
           &::before
             content: url("../img/help-icon.svg") // динамика
             margin-right: 5px
+    .menu-button
+      display: flex
+      align-items: center
+      margin-top: 40px
+      padding: 7px 20px
+      border-radius: $borderRadius
+      background: $gradientGreen
+      color: #fff
+      font-size: $textNormal
+      font-weight: bold
+      &::before
+        content: url("../img/bottle-ico.svg") // динамика
+        margin-right: 5px
