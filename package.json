@@ -4,6 +4,10 @@
   "sasslintConfig": "scss-lint.yml",
   "description": "my next-again project by far",
   "main": "index.js",
+  "scripts": {
+    "stylelint": "stylelint ./src/styles/**/*.sass",
+    "stylelint-fix": "stylelint ./src/styles/**/*.sass --fix"
+  },
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-pug": "^4.0.1",
@@ -32,9 +36,6 @@
     "sass-lint": "^1.13.1",
     "stylelint-config-property-sort-order-smacss": "^5.0.0",
     "stylelint-config-standard": "^18.3.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "landing",
